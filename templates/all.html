@@ -1,0 +1,43 @@
+{% extends "index.html" %}
+{% block content %}
+
+<div>
+    <p class = "opis">Aktualny stan wyprawki wygląda następująco:</p>
+    {% if result %}
+    <table class="status">
+
+        <tr>
+            <th>
+                nazwa
+            </th>
+            <th>
+                ilość
+            </th>
+            <th>
+                przeznaczenie
+            </th>
+            <th>
+                uwagi
+            </th>
+{% for i in result %}
+        </tr>
+        <tr>
+            <td>
+                {{i["name"]}}
+            </td>
+            <td>
+                {{i["quantity"]}}
+            </td>
+            <td>
+                {{i["dedication"]}}
+            </td>
+            <td>
+                {{i["remarks"]}}
+            </td>
+        </tr>
+    {% endfor %}
+    </table>
+    {% endif %}
+</div>
+
+{% endblock %}

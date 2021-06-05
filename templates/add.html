@@ -1,0 +1,22 @@
+{% extends "index.html" %}
+{% block content %}
+<p>
+    <form action = "" method = "POST">
+    <p class = "opis">Uzupełnij poniższe pola i klinknij "dodaj":</p>
+
+        Nazwa: <input type = "text" id = "name" name = "name"><br>
+        <p></p>
+        Ilość: <input type = "text" id = "quantity" name = "quantity"><br>
+        <p></p>
+        Przeznaczenie: <select name = "dedication" id="dedication">
+                    <option>mama</option>
+                    <option>dziecko</option>
+                    <option>higiena</option>
+                </select><br>
+         <p></p>
+        Uwagi: <textarea name = "remarks" rows = "1" cols = "90"></textarea><br>
+        <p></p>
+        <input type = "submit" value = "dodaj">
+    </form>
+</p>
+{% endblock %}

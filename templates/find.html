@@ -1,0 +1,39 @@
+{% extends "index.html" %}
+{% block content %}
+<p>
+    <form action = "" method = "POST">
+    <p class = "dopis">Uzupełnij kategorię, wpisz nazwę i kliknij "szukaj":</p>
+        <select name = "option">
+            <option>name</option>
+            <option>quantity</option>
+            <option>dedication</option>
+        </select><br>
+    <p></p>
+        wpisz <input type = "text" id = "value" name = "value">
+    <p></p>
+       <input type = "submit" value = "szukaj">
+    </form>
+</p>
+<div>
+    {% if result %}
+    <table>
+        {% for i in result %}
+        <tr>
+            <td>
+                {{i["name"]}},
+            </td>
+            <td>
+                {{i["quantity"]}}
+            </td>
+            <td>
+                {{i["dedication"]}}
+            </td>
+            <td>
+                {{i["remarks"]}}
+            </td>
+        </tr>
+    {% endfor %}
+    </table>
+    {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "index.html" %}
+{% block content %}
+<p>
+    <form action = "" method = "POST">
+    <p class = "opis">Uzupełnij nazwę, ilość i kliknij "usuń":</p>
+        Nazwa: <input type = "text" id = "name" name = "name"><br>
+    <p></p>
+        Ilość: <input type = "text" id = "quantity" name = "quantity"><br>
+    <p></p>
+        <input type = "submit" value = "usuń">
+    </form>
+</p>
+    {% if msg %}
+        {{msg}}
+    {% endif %}
+{% endblock %}

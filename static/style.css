@@ -1,0 +1,55 @@
+.intro{
+    color: pink;
+    font-size: 50px;
+    font-weight: bold;
+    background:grey;
+    width:100%;
+    text-align:center;
+}
+
+.menu{
+    color: black;
+    font-size: 40px;
+    width: 2000px;
+    border-width:2px;
+}
+.punkty{
+    color: black;
+    font-size: 30px;
+    width: 600px;
+    border-width:2px;
+
+}
+.podpunkty{
+    color: #DE1FA1;
+    font-size: 30px;
+    width: 600px;
+    border-width:2px;
+
+}
+.opis{
+    font-weight: 700;
+    font-size:20px;
+}
+.status{
+   border: 1px solid black;
+   column-width=20px;
+
+
+
+}
+th{
+    border: 1px solid black;
+    column-width: 10px;
+    text-align: left;
+    background-color: pink;
+}
+td {
+    border: 1px solid black;
+    text-align: left;
+
+}
+body{
+    background-size: cover
+
+}
